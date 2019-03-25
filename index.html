@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <script>
+        function roll() {
+            var randNum1 = Math.floor((Math.random() * 6) + 1);
+
+            if (randNum1 == 1) {
+                document.getElementById("die1").src = "die1.png";
+            } else if (randNum1 == 2) {
+                document.getElementById("die1").src = "die2.png";
+            } else if (randNum1 == 3) {
+                document.getElementById("die1").src = "die3.png";
+            } else if (randNum1 == 4) {
+                document.getElementById("die1").src = "die4.png";
+            } else if (randNum1 == 5) {
+                document.getElementById("die1").src = "die5.png";
+            } else if (randNum1 == 6) {
+                document.getElementById("die1").src = "die6.png";
+            }
+
+            var randNum2 = Math.floor((Math.random() * 6) + 1);
+
+            if (randNum2 == 1) {
+                document.getElementById("die2").src = "die1.png";
+            } else if (randNum2 == 2) {
+                document.getElementById("die2").src = "die2.png";
+            } else if (randNum2 == 3) {
+                document.getElementById("die2").src = "die3.png";
+            } else if (randNum2 == 4) {
+                document.getElementById("die2").src = "die4.png";
+            } else if (randNum2 == 5) {
+                document.getElementById("die2").src = "die5.png";
+            } else if (randNum2 == 6) {
+                document.getElementById("die2").src = "die6.png";
+            }
+
+        }
+
+    </script>
+</head>
+
+
+<body>
+
+    <main>
+        <img id="die1" src="die1.png">
+        <img id="die2" src="die2.png">
+        <button onclick="roll()">Roll Dice</button>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 1em;
+    justify-content: center;
+}
+
+main>button {
+    grid-column: 1 / 3;
+    font-size: 5em;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+main>button:active {
+    font-size: 4.9em;
+}

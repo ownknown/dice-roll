@@ -4,11 +4,11 @@
 <head>
     <link href="style1.css" rel="stylesheet" type="text/css">
     <script>
-        function roll() {
+        function roll(imgElement) {
             var randNum1 = Math.floor((Math.random() * 6) + 1);
-            var randNum2 = Math.floor((Math.random() * 6) + 1);
-            document.getElementById("die1").src = "die" + randNum1 + ".png";
-            document.getElementById("die2").src = "die" + randNum2 + ".png";
+            //            var randNum2 = Math.floor((Math.random() * 6) + 1);
+            imgElement.src = "die" + randNum1 + ".png";
+            //            document.getElementById("die2").src = "die" + randNum2 + ".png";
         }
     </script>
 </head>
@@ -17,9 +17,8 @@
 <body>
 
     <main>
-        <img id="die1" src="die1.png">
-        <img id="die2" src="die2.png">
-        <button onclick="roll()">Roll Dice</button>
+        <img id="die1" src="die1.png" onclick(roll(this))>
+        <img id="die2" src="die2.png" onclick(roll(this))>
     </main>
 </body>
 

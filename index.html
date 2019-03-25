@@ -6,9 +6,7 @@
     <script>
         function roll(imgElement) {
             var randNum1 = Math.floor((Math.random() * 6) + 1);
-            //            var randNum2 = Math.floor((Math.random() * 6) + 1);
             imgElement.src = "die" + randNum1 + ".png";
-            //            document.getElementById("die2").src = "die" + randNum2 + ".png";
         }
     </script>
 </head>
@@ -17,8 +15,8 @@
 <body>
 
     <main>
-        <img id="die1" src="die1.png" onclick(roll(this))>
-        <img id="die2" src="die2.png" onclick(roll(this))>
+        <img id="die1" src="die6.png" onclick="roll(this)">
+        <img id="die2" src="die6.png" onclick="roll(this)">
     </main>
 </body>
 
